@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Web test</title>
+        <style>
+            .js{
+                font-weight: bold;
+                color: red;
+            }
+            #first{
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>WEB</h1>
+        <h2 style="background-color: coral; color:powderblue">JavaScript</h2>
+        <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        ">
+        <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        ">
+        <p>
+            <span id="first" class="js">JavaScript</span>(/ˈdʒɑːvəˌskrɪpt/), often abbreviated JS, 
+            is a programming language that is one of the core technologies of the World Wide Web, 
+            alongside HTML and CSS. Over 97% of websites use <span class="js">JavaScript</span> on the client side 
+            for web page behavior, often incorporating third-party libraries. 
+            All major web browsers have a dedicated <span class="js">JavaScript</span> engine to execute the code on the user's device.
+        </p>
+    </body>
+</html>
+<!--
+div : 줄바꿈까지 되는 태그
+span : 줄바꿈X 태크
+id : 식별용, 1회용 #을 이용
+class : 그룹핑용(더 포괄적) .을 이용
+-->
