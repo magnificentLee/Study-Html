@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>css</title>
+        <style>
+            p:first-line { color: coral;}
+        </style>
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. 
+            Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing 
+            diam donec adipiscing tristique. Mi eget mauris pharetra et. 
+            Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. 
+            Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. 
+            In hac habitasse platea dictumst quisque sagittis purus. 
+            Pulvinar elementum integer enim neque volutpat ac.
+        </p>
+    </body>
+</html>
+<!--
+    구체성
+    0, 0, 0, 0
+    0, 1, 0, 0 : 선택자에 있는 모든 id 속성값
+    0, 0, 1, 0 : 선택자에 있는 모든 class 속성값, 기타 속성, 가상 클래스
+    0, 0, 0, 1 : 선택자에 있는 모든 요소, 가상 요소
+    전체 선택자는 0, 0, 0, 0 을 갖는다
+    조합자는 구체성에 영향을 주지 않는다.
+
+    예시
+    h1 {...}  0,0,0,1 (h1:element)
+    body h1 {...} 0,0,0,2 (body,h1:element)
+    .grape {...} 0,0,1,0 (.grape:class)
+    *.bright {...} 0,0,1,0 : 전체 선택자 = 0,0,0,0
+    p.bright em.dark {...} 0,0,2,2 (.bright, .dark:class / p,em:element)
+    #page {...} 0,1,0,0 (#page:id)
+    div#page {} 0,1,0,1 (#page:id, div:element)
+    p#page {color:red} 0,1,0,1
+    <p id="page" style="color:blue">Lorem ipsum dolor sit.</p>
+
+    !important
+    p#page {color: red !important;}
+    <p id="page" style="color:blue">Lorem ipsum dolor sit.</p> : red로 나옴
+    !important는 최우선순위를 가지기 때문
+-->

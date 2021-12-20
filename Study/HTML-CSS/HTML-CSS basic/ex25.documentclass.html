@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>css</title>
+        <style media="screen">
+            p[class] { color: silver;}
+            p[class][id] {text-decoration: underline;}
+            p[class~="color"] {font-style: italic;} /* ~= : 포함(공백으로 구분) : 1,2번*/
+            p[class^="color"] {font-style: italic;} /* ^= : 시작(시작부분에 포함시) : 1,3번*/
+            p[class$="color"] {font-style: italic;} /* $= : 끝(^의 반대) : 2번*/
+            p[class*="color"] {font-style: italic;} /* *= : 포함(전부) : 1,2,3번*/
+        </style>
+    </head>
+    <body>
+        <p class="foo">Hello</p>
+        <p class="bar">CSS</p>
+        <p class="baz" id="title">HTML</p>
+
+        <p class="color hot">red</p>
+        <p class="cool color">blue</p>
+        <p class="colorful nature">rainbow</p>
+    </body>
+</html>
