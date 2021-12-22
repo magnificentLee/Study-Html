@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>test</title>
+        <style>
+            div {font-size: 16px;}
+            .px {font-size: 12pt;}
+            .percent {font-size: 200%;}
+            .em {font-size: 1em;}
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <p class="px">단위 16px로 선언된 텍스트입니다.</p>
+            <p class="pt">단위 16px로 선언된 텍스트입니다.</p>
+            <p class="percent">단위 16px로 선언된 텍스트입니다.</p>
+            <p class="em">단위 16px로 선언된 텍스트입니다.</p>
+        </div>
+    </body>
+</html>
+<!--
+    절대 길이
+    px : 절대 길이, 다른 요소에 영향을 받지 않기 때문에 권장됨
+    pt : 해상동에 따라 차이가 있음 윈도우에선 9pt = 12px, 맥에선 9pt = 9px 권장되지 않음
+    상대 길이
+    % : 부모의 값에 대해서 백분율로 환산한 크기를 갖게 됨
+    em : font-size를 기준으로 값을 환산함, 소숫점 3자리까지 표현 가능
+    rem : root의 font-size를 기준으로 값을 환산함
+    vw : viewport의 width값을 기준으로 1%의 값으로 계산
+
+    1em = 16px
+    1/16em = 1px
+-->
