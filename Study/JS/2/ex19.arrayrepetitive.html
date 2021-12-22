@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>array+repetitive</title>
+        <style>
+            .hd { font-size: 50px; color: coral;}
+            .h { font-size:  20px; color: red; background-color: blue;}
+            .bd {color: lightcoral; background-color: lightblue;}
+        </style>
+    </head>
+    <body>
+        <h1 class="hd">Loop & Array</h1>
+        <script>
+            var coworkers = ['egoing', 'leezche', 'duru', 'taeho'];
+            var links = ['https://naver.com', 'https://google.com', 'https://daum.net', 'https://youtube.com']
+        </script>
+        <h2 class="h">Co workers</h2>
+        <ul class="bd">
+            <script>
+                var i = 0
+                while (i < coworkers.length) {
+                document.write('<li><a href="'+links[i]+'">'+coworkers[i]+'</li>');
+                i++;
+            }
+            </script>
+        </ul>
+    </body>
+</html>
