@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Padding</title>
+        <style>
+            div {
+                /*padding-top: 0;
+                padding-right: 10px;
+                padding-bottom: 20px;
+                padding-left: 30px;*/
+
+                /*padding: 0 10px 20px 30px;*/ /*위와 동일한 기능 상우하좌 다 다를때*/
+                /*padding: 0 30px 20px; */ /*오른쪽 왼쪽이 같을때*/
+                /*padding: 0 30px;*/ /*위 아래가 0으로 같을때*/
+                padding: 30px; /*상우하좌 모두 같을때*/
+                border: 10px solid #000;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Box Model을 알아볼까요?
+        </div>
+    </body>
+</html>
+<!--
+padding: [-top] [-right] [-bottom] [-left];
+            0      10px     20px     30px   /* 상, 우, 하, 좌 다름 */
+            0      10px     20px            /* 좌, 우 같음 */
+            0      10px                     /* 상, 하 같음 & 좌, 우 같음 */
+            0                               /* 상, 우, 하, 좌 모두 같음 */
+
+-->

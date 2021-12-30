@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Box Model</title>
+        <style>
+            .parent {
+                border: 10px solid blue;
+            }
+            .child {
+                /*아래의 합: 300 + 20*2 + 10*2 = 360*/
+                width: 300px;
+                padding: 20px;
+                border: 10px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child">
+                Box Model을 알아볼까요?
+            </div>
+        </div>
+    </body>
+</html>

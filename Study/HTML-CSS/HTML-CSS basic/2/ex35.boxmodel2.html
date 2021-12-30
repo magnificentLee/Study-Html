@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Box Model</title>
+        <style>
+            p.one {
+                border-style: solid;
+                border-color: red;
+            }
+            p.two {
+                border-style: solid;
+                border-color: green;
+            }
+            p.three {
+                border-style: solid;
+                border-color: red green blue yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>The border-color Property</h2>
+        <p>This property specifies the color of the four borders:</p>
+        
+        <p class="one">A solid red border</p>
+        <p class="two">A solid green border</p>
+        <p class="three">A solid multicolor border</p>
+        <p><b>Note:</b> The "border-color" property does not work if it is used alone. Use the
+            "border-style" property to set the borders first.</p>
+    </body>
+</html>
+<!--
+    상 우 하 좌
+border-width: [top] [right] [bottom] [left];
+border-style: [top] [right] [bottom] [left];
+border-color: [top] [right] [bottom] [left];
+border: [-width] [-style] [-color];
+
+대괄호 포함은 해당 위치의 설정값이 들어가야됨
+ex)
+border-width: 6px 3px 4px 1px;
+dotted 점선
+dashed 점선 테두리(납작한 점)
+solid 실선
+double 두 줄 테두리
+groove 홈, 움푹 파인 효과의 테두리
+ridege 산등성이처럼 솟은 부분
+inset 상,좌 테두리가 진하게 표시, 요소가 안으로 들어간 느낌
+outset 우,하 테두리가 진하게 표시, 요소가 밖으로 나온 느낌
+none 테두리 없음
+hidden 테두리가 존재하지만 표현되지는 않음
+-->
