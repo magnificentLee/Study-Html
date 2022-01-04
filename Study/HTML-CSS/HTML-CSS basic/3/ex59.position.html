@@ -1,0 +1,33 @@
+요소의 레이아웃을 설정하는 대표적인 속성
+요소의 위치를 원하는 곳으로 이동할 수 있게함
+좌표 속성인 offset에 대해서도 알아야함
+
+position 속성 : 요소의 위치를 정하는 방법을 지정하는 속성
+position: static | absolute | fixed | relative | sticky | initial | inherit;
+
+static : Normal-flow 에 따라 배치, offset 값이 적용 X(기본값)
+        부모 요소의 위치를 기준으로 offset 에 따라 배치된다
+        부모가 position 값(static 제외)을 가지면 offset 값의 시작점이 된다.
+absolute : 부모의 position 값이 static인 경우 조상의 position 값이 static이 아닐 때까지 거슬러 올라가 기준으로 삼음
+        Normal-flow의 흐름에서 벗어남
+fixed : 브라우저의 창을 기준으로 offset에 따라 배치된다
+        즉, 화면 스크롤에 관계없이 항상 화면의 정해진 위치에 정보가 나타남
+        부모의 위치에 영향을 받지 않음
+relative : 자신이 원래 있어야 할 위치를 기준으로 offset에 따라 배치된다
+           부모의 position 속성에 영향을 받지 않음
+           Normal-flow의 흐름에 따름
+           주변 요소에 영향을 주지 않으면서 offset값으로 이동
+
+
+Normal-flow : 일반적인 상황에서 각의 요소들의 성질에 따라 배치 되는 순서(흐름)를 뜻함
+              block레벨 요소들은 상하로, inline 레벨 요소들은 좌우로 배치되는 것
+
+
+offset(top/left/bottom/right)
+top|bottom|left|right: auto|length|initial|inherit;
+top: 50%;
+left: 10px;
+bottom: -10px;
+right: auto;
+offset은 top, bottom (상하) 는 기준이 되는 요소의 height 값 
+left, right (좌우) 는 width값에 대하여 계산되어짐

@@ -1,0 +1,20 @@
+css를 통해서 텍스트를 수직, 수평 정렬 할 수 있음
+vertical-align : 수직 정렬
+block 요소가 아닌 inline, inline-block 에서만 사용 가능
+따라서 display 속성이 변하지 않는 div, p 같은 블록레벨 요소에서는 적용불가
+
+속성
+vertical-align: keyword|length|percent|initial|inherit;
+
+속성 값
+length : 요소를 지정한 길이만큼 올리거나 내림, 음수 허용
+% : 요소를 line-height를 기준으로 올리거나 내림, 음수 허용
+keyword : baseline(기본값), sub, super, top, text-top, middle, bottom, text-bottom
+
+sub : 부모 아래 첨자 기준으로 정렬 
+super : 부모 위 첨자 기준으로 정렬 
+text-top : 부모 텍스트의 맨 위(Ascender 제외)  
+text-bottom : 부모의 텍스트의 맨 아래(Descender 제외) 
+middle : 부모의 중앙에 위치 
+top : 부모의 맨 위 위치 bottom : 
+부모의 맨 아래 위치

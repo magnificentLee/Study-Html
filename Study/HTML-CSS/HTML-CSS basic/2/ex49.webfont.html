@@ -1,0 +1,23 @@
+@font-face
+
+웹에 있는 글꼴을 사용자의 로컬환경(컴퓨터)으로 다운로드하여 적용하는 속성
+기본 값 : 없음
+
+@font-face {
+    font-properties
+}
+속성 값
+font-family(필수) : 글꼴의 이름 지정
+src(필수)         : 다운로드 받을 글꼴의 경로(URL)
+font-style(옵션)  : 글꼴의 스타일 지정, 기본 값 = normal
+font-weight(옵션) : 글꼴의 굵기 지정, 기본 값 = normal
+
+@font-face {
+    font-family: webNanumGothic;
+    src: url(NanumGothic.eot);
+    font-weight: bold;
+    font-style: italic;
+}
+body{
+    font-family: webNanumGothic;
+}

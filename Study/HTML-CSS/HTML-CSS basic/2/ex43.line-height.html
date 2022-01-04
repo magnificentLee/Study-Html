@@ -1,0 +1,43 @@
+줄간격은 문자끝부터 최상단, 최하단의 길이를 포함한 간격임
+즉, 20px을 줄 경우 문장의 높이 + 문장 위 아래로 2*n px 을 포함한 간격이라는것
+
+line-height: normal|number|length|initial|inherit;
+
+line-height: normal;
+line-height: 2;  /* 숫자만 입력 가능함 */
+line-height: 20px;
+line-height: 200%;
+
+body { font-size: 20px; line-height: 2; }       /* line-height = 40px; */
+body { font-size: 20px; line-height: 200%; }    /* line-height = 40px; */
+
+body { font-size: 20px; line-height: 2; }    /* line-height = 40px; */
+p { font-size: 10px; }                                  /* line-height = 20px; */
+
+
+body { font-size: 20px; line-height: 200%; }    /* line-height = 40px; */
+p { font-size: 10px; }                                          /* line-height = 40px; */
+
+예제
+<!--
+<html>
+
+... 중략 ...
+
+<div class="wrap">       
+    <div class="content">
+        <div class="section"></div>
+        <div class="article"></div>              
+        <div class="footer"></div>       
+    </div>
+</div>
+
+... 중략 ...
+
+</html>
+
+ html { font-size: 16px; } 
+.wrap { font-size: 1.5rem; } 
+.section { font-size: 1.5em; }
+-->
+해당 코드의 .section 요소의 font-size 값은 36px(16 * 1.5 * 1.5)이다

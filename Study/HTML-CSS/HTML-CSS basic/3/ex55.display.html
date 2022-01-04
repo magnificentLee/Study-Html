@@ -1,0 +1,23 @@
+display 속성
+요소의 렌더링 박스 유형을 결정하는 속성
+기본 값 = 요소마다 다름
+
+display: value;
+속성 값
+none : 요소가 렌더징 되지 않음
+inline : inline level 요소처럼 렌더링
+block : block level 요소처럼 렌더링
+        inline level 요소처럼 렌더링되지만 block level의 성질을 가짐
+inline-block : height, width 등과 같은 박스모델 속성을 적용 가능
+
+그외에 list-item, inline-flex, table-cell 등 다양한 속성 값 존재
+inline level 요소 사이의 공백과 개행 처리 inline 요소의 경우 공백과 개행에 대해서 
+하나의 여백으로 받아들입니다. 따라서 inline와 inline-block의 경우 
+태그 사이의 공백이나 개행이 있을 경우 약 4px의 여백을 가지게 됩니다.
+display와 box model의 관계
+
+display      width height margin padding border    
+block          ㅇ     ㅇ     ㅇ      ㅇ     ㅇ
+inline         X      X    좌/우   ㅇ(설명) ㅇ(설명)
+inline-block   ㅇ     ㅇ     ㅇ      ㅇ     ㅇ
+
