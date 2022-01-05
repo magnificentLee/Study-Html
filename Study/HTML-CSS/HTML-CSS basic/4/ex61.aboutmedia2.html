@@ -1,0 +1,18 @@
+선언 방법
+@media mediaqueries { /* style rules  */ }
+
+미디어 쿼리 구문은 논리적으로 평가, 참이면 뒤에 나오는 스타일 규칙이 적용, 거짓이면 무시
+미디어 쿼리 구문은 미디어 타입과 미디어 특성으로 이루어짐
+
+미디어 타입(all, braille, embossed, handheld, print, projection, screen, speech, tty, tv)
+보통 all, print, screen(1순위) 정도만 알아두면 됨
+화면을 출력하는 디스플레이가 있는 미디어들은 전부 screen에 속하기 때문에 현실적으로
+미디어들은 전부 여기에 해당, all 타입은 모든 미디어에 적용됨
+
+미디어 특성(width, height, device-width, device-height, orientation, aspect-ratio, device-aspect-ratio, color, color-index, monochrome, resolution, scan, grid)
+보통 width, orientation 정도만 알아두면 됨
+width : 뷰포트의 너비(브라우저 창의 너비 != 스크린의 크기)
+orientation : 미디어가 세로 or 가로모드인지 구분
+미디어 쿼리에서는 이 구분을 width와 height 특성의 값을 비교해서 
+height > width = 세로모드, 그 반대일 경우 가로모드 라고 해석함
+세로모드에서는 portrait, 가로모드에서는 landscape 키워드와 매칭됨
