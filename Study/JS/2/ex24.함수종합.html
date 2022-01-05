@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Function & Parameter & Argument</title>
+    </head>
+    <body>
+        <h1>Function</h1>
+        <h2>Basic</h2>
+        <ul>
+            <script>
+                function two(){
+                    document.write("<li>2-1</li>");
+                    document.write("<li>2-2</li>");
+                }
+                var i;
+                for (i=1; i<4; i+=2){
+                    document.write("<li>"+i+"</li>");
+                    two();
+                }
+            </script>
+        </ul>
+        <h2>Parameter & Argument</h2>
+        <script>
+            function onePlusOne(){
+                document.write(1+1+"<br>");
+            }
+            onePlusOne();
+            function sum(left, right){
+                document.write(left + right+"<br>");
+            }
+            function sumColorRed(left, right){ // 단순히 문자가 더해진 결과가 나옴 2 + 3 = 23
+                document.write('<div style="color:red">' + left + right + "</div><br>");
+            }
+            sum(2, 3);
+            sumColorRed(2, 3);
+            sum(3, 4);
+        </script>
+        <h2>Return</h2>
+        <script>
+            function sum2(left, right){  // return을 이용하면 결과를 디자인 할 수 있음
+                return left+right;
+            }
+            document.write(sum2(2, 3) + "<br>");
+            document.write('<div style="color:red">' + sum2(2, 3) + "</div><br>");
+            document.write('<div style="font-size:3rem">' + sum2(2, 3) + "</div>")
+        </script>
+    </body>
+</html>
