@@ -1,1 +1,1 @@
-# HTML-study
+# HTML/CSS/JS-study
